@@ -33,6 +33,7 @@ y este proyecto sigue el [Versionado Semántico](https://semver.org/lang/es/).
 - Las listas numeradas ya no duplican el marcador («1. 1. 1.») al editar o borrar líneas.
 - El difuminado de las notas ocultas respeta las esquinas redondeadas de la tarjeta.
 - Tras restaurar desde Drive ya no aparece el aviso de «cambios sin subir» cuando no había notas locales previas.
+- Al actualizar desde la v1.0.0 las notas locales se conservan (migraciones manuales de base de datos en lugar de recreación destructiva).
 
 ## [1.0.0] - 2026-06-28
 
