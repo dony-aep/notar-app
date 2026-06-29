@@ -5,6 +5,12 @@ Todas las novedades importantes de este proyecto se documentan en este archivo.
 El formato se basa en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/),
 y este proyecto sigue el [Versionado Semántico](https://semver.org/lang/es/).
 
+## [1.1.1] - 2026-06-29
+
+### Corregido
+
+- Al mantener pulsada una nota no fijada para arrastrarla, ya no se deselecciona automáticamente; ahora ambas acciones (seleccionar y arrastrar) funcionan de forma consistente, igual que en las notas fijadas.
+
 ## [1.1.0] - 2026-06-29
 
 ### Añadido
