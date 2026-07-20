@@ -20,6 +20,7 @@ y este proyecto sigue el [Versionado Semántico](https://semver.org/lang/es/).
 
 - El menú lateral ya no queda abierto al volver de Archivo, Papelera o Ajustes.
 - Los iconos de la barra de estado ahora son legibles en todos los menús inferiores con tema oscuro.
+- El botón «Descargar APK» de Buscar actualizaciones ahora abre la página del release concreto; antes usaba un enlace genérico que la app de GitHub interceptaba sin mostrar nada.
 
 ## [1.1.1] - 2026-06-29
 
