@@ -5,6 +5,22 @@ Todas las novedades importantes de este proyecto se documentan en este archivo.
 El formato se basa en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/),
 y este proyecto sigue el [Versionado Semántico](https://semver.org/lang/es/).
 
+## [1.2.0] - 2026-07-19
+
+### Añadido
+
+- **Indicador por nota de «cambios sin subir»**: las notas editadas después de la última copia muestran una nube junto al pin en Inicio, que se desvanece al completarse la subida. Solo aparece con la sesión de Google y la clave de cifrado activas.
+- **Ordenar en Archivo y Papelera** por más reciente o más antiguo, con preferencia independiente por pantalla.
+
+### Cambiado
+
+- El menú de la selección múltiple en Inicio ahora es dinámico según el estado de las notas seleccionadas: muestra «Desfijar» si todas están fijadas y «Mostrar» si todas están ocultas.
+
+### Corregido
+
+- El menú lateral ya no queda abierto al volver de Archivo, Papelera o Ajustes.
+- Los iconos de la barra de estado ahora son legibles en todos los menús inferiores con tema oscuro.
+
 ## [1.1.1] - 2026-06-29
 
 ### Corregido
