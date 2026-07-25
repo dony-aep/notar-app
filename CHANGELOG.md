@@ -5,6 +5,18 @@ Todas las novedades importantes de este proyecto se documentan en este archivo.
 El formato se basa en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/),
 y este proyecto sigue el [Versionado Semántico](https://semver.org/lang/es/).
 
+## [1.2.1] - 2026-07-25
+
+### Corregido
+
+- **Las notas restauradas desde Google Drive no aparecían al buscar por su contenido**: solo se encontraban por el título. La copia guarda únicamente el texto con formato y, al restaurar, no se regeneraba el texto plano que usa el buscador. Las notas ya restauradas se reparan solas al abrir esta versión.
+- La búsqueda ignora los símbolos pegados a los extremos del término: escribir «--Google» ahora encuentra «Google».
+
+### Cambiado
+
+- El menú lateral ya no ocupa todo el ancho de la pantalla en móviles.
+- El tema «Automático» se muestra con un icono de paleta en Ajustes.
+
 ## [1.2.0] - 2026-07-19
 
 ### Añadido
