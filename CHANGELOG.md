@@ -5,6 +5,57 @@ Todas las novedades importantes de este proyecto se documentan en este archivo.
 El formato se basa en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/),
 y este proyecto sigue el [Versionado Semántico](https://semver.org/lang/es/).
 
+## [2.0.0] - 2026-10-10
+
+### Añadido
+
+- **Sincronización con Google Drive entre teléfonos**: «Sincronizar ahora» trae lo que subió otro teléfono y sube tus cambios. De cada nota se queda la versión más reciente, así que dos teléfonos ya no se borran lo que subió el otro.
+- **La sincronización automática sigue funcionando con la app cerrada**: trae lo nuevo al abrir Notar y sube tus cambios unos segundos después de cada uno. Sin conexión, espera a que vuelva. La clave de cifrado se pide una sola vez.
+- **Pantalla Copia cifrada**, con la sincronización, la clave y la cuenta en un solo sitio. Ajustes muestra solo el estado de la copia.
+- **«¿Olvidaste tu clave?»**: elimina la copia que ya nadie puede abrir y te deja empezar con una clave nueva.
+- Las notas ocultas y el orden personalizado se guardan en la copia y se recuperan al entrar en otro teléfono.
+- «Seleccionar todo» en el modo selección.
+- Sin notas, Inicio ofrece crear la primera de cada tipo.
+
+### Cambiado
+
+- **Cerrar sesión funciona como en Keep**: las notas que ya están en tu copia de Drive se quitan del teléfono y vuelven al entrar con la misma cuenta y tu clave. Las que no se han subido se quedan.
+- **Rediseño con Material 3 Expressive** de todas las pantallas:
+  - **Inicio:** una sola barra con búsqueda, orden, vista y cuenta, filtros por tipo en botones y tarjetas rellenas.
+  - **Notas:** las de cuenta y enlace se editan en su sitio, con un botón de copiar por dato.
+  - **Modo selección:** sus acciones van en una barra flotante abajo.
+  - **Ayuda:** las preguntas se abren en su sitio.
+- **Cambiar la clave pide primero la actual** y vuelve a cifrar la copia con la nueva. Antes la copia anterior seguía con la clave vieja.
+- La clave de cifrado queda guardada en el teléfono sin pedir la huella en cada copia, para que la sincronización funcione con la app cerrada. Si ya tenías una guardada, se pide la huella una última vez.
+- Mostrar la contraseña de una cuenta pide la huella cuando «Huella para cuentas» está activado.
+- Al cambiar de pantalla, la nueva entra deslizándose, sin el destello que dejaba el fundido.
+- Los diálogos dicen en una o dos frases qué va a pasar.
+- Actualizaciones busca una versión nueva al abrirse.
+
+### Eliminado
+
+- «Restaurar desde Drive»: sincronizar ya trae las notas de la copia.
+
+### Corregido
+
+- Las notas borradas para siempre ya no vuelven a la papelera al restaurar o sincronizar una copia anterior.
+- **Vistas previas de enlaces más fiables**:
+  - Leen bien los títulos con apóstrofos y los acentos de las páginas con codificaciones antiguas.
+  - Funcionan con los enlaces `http` que redirigen a `https`.
+  - Muestran el título de los videos de YouTube.
+  - Un fallo de red ya no esconde la vista previa durante horas.
+- La búsqueda muestra la coincidencia en el fragmento de cada resultado. En notas escritas como lista, el fragmento enseñaba las líneas de antes.
+- El teclado se cierra al salir de una nota libre.
+- Al abrir Ajustes o Copia cifrada ya no aparece un instante «Iniciar sesión con Google», ni Archivo sale vacío antes de cargar.
+
+### Seguridad
+
+- **La copia solo se sube a la cuenta con la que iniciaste sesión.** Con varias cuentas de Google en el teléfono, Notar podía usar el permiso de Drive de otra.
+- Una copia que tu clave no abre nunca se sobrescribe, y una clave equivocada no se guarda.
+- Cambiar la clave y eliminar la copia piden la clave actual: tener el teléfono desbloqueado no basta.
+- Al cerrar sesión no queda rastro en el teléfono de las notas quitadas.
+- Una copia manipulada en Drive ya no puede cerrar la app.
+
 ## [1.2.1] - 2026-07-25
 
 ### Corregido
