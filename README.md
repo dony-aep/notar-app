@@ -1,6 +1,6 @@
 # Notar
 
-Aplicación de notas para Android, minimalista y centrada en la privacidad. Organiza tus ideas con notas de texto enriquecido, guarda credenciales y enlaces, y sincroniza todo de forma cifrada con tu propia cuenta de Google Drive.
+Notas para Android que se guardan en tu teléfono y, si quieres, en tu Google Drive, cifradas con una clave que solo tú sabes. Hay tres tipos de nota: texto libre, cuentas con su contraseña y enlaces.
 
 ## Capturas de pantalla
 
@@ -16,44 +16,52 @@ Aplicación de notas para Android, minimalista y centrada en la privacidad. Orga
 
 Las capturas usan datos de demostración.
 
-## Características
+## Qué hace
 
-- **Notas Libres**: lienzo de escritura con texto enriquecido — negrita, cursiva, subrayado, encabezados y listas con viñetas o numeración.
-- **Notas de Cuenta**: guarda credenciales (servicio, correo, usuario y contraseña) con la contraseña cifrada en el dispositivo.
-- **Notas de Enlace**: guarda URLs con título y descripción.
-- **Vistas previas de enlaces**: vista previa automática con imágenes, iconos de sitio y soporte para páginas pesadas (p. ej. Play Store), con caché persistente.
-- **Colores por nota**: distingue tus notas con una paleta de colores.
-- **Ocultar/difuminar notas**: oculta el contenido de notas individuales desde la pantalla de Inicio, de forma persistente.
-- **Organización avanzada**: fija, archiva, envía a la papelera, reordena arrastrando y ordena por fecha o manualmente.
-- **Selección múltiple**: selecciona varias notas en Inicio, Archivo o Papelera para acciones en lote (fijar, archivar, restaurar, eliminar).
-- **Búsqueda con resaltado**: encuentra notas al instante, resalta coincidencias y permite saltar entre ellas dentro de cada nota.
-- **Vista de columnas**: alterna entre una y dos columnas desde la barra de búsqueda.
-- **Sincronización cifrada**: sincroniza tus notas entre teléfonos con tu Google Drive, cifradas de extremo a extremo con una clave que solo tú conoces. Al cerrar sesión, las notas sincronizadas se quitan del teléfono y vuelven al entrar, como en Keep.
-- **Sincronización automática**: opcional; trae lo nuevo al abrir la app y sube cada cambio, también con la app cerrada. El botón de cuenta muestra si todo está al día.
-- **Seguridad**: huella para mostrar o copiar credenciales y bloqueo de capturas de pantalla opcionales.
-- **Material 3 Expressive**: interfaz moderna con color dinámico (Material You) y temas claro, oscuro y automático.
+### Tres tipos de nota
 
-## Requisitos
+- **Libres.** Texto con negrita, cursiva, subrayado, encabezados y listas con viñetas o numeradas.
+- **Cuentas.** Servicio, correo, usuario y contraseña, cada dato con su botón de copiar. La contraseña se guarda cifrada en el teléfono.
+- **Enlaces.** La dirección con un título y una descripción. Notar carga la vista previa de la página, con su imagen, el icono del sitio y el título, y la guarda para no pedirla otra vez.
 
-- Android 8.0 (API 26) o superior
+### Organizar
+
+- Fija, archiva o manda a la papelera cualquier nota. Ordénalas por fecha o a mano, arrastrando las tarjetas.
+- Selecciona varias notas en Inicio, Archivo o Papelera para fijarlas, archivarlas, restaurarlas o borrarlas de una vez.
+- Dale a cada nota un color, y elige entre una y dos columnas desde la barra de búsqueda.
+- La búsqueda resalta la coincidencia en cada resultado. Dentro de la nota, puedes saltar de una coincidencia a la siguiente.
+
+### Privacidad en el teléfono
+
+- Ocultar una nota la difumina en Inicio hasta que la vuelvas a mostrar.
+- Con «Huella para cuentas», ver o copiar una contraseña pide tu huella, PIN o patrón.
+- «Bloquear capturas» impide capturas y grabaciones de pantalla, y tapa Notar en Recientes.
+
+### Sincronización con Google Drive
+
+- Tus notas se suben a tu Drive como un único archivo cifrado, en una carpeta de la app que no aparece entre tus archivos. Sin tu clave nadie puede abrirlo, tampoco Google.
+- Si usas Notar en dos teléfonos, de cada nota se queda la versión más reciente.
+- La sincronización automática trae lo nuevo al abrir la app y sube cada cambio unos segundos después, también con la app cerrada. Se puede apagar. El botón de cuenta de Inicio avisa cuando hay algo sin subir.
+- Al cerrar sesión, las notas que ya están en Drive se quitan del teléfono y vuelven al entrar otra vez, como en Keep. Las que no se habían subido se quedan.
+
+La interfaz usa Material 3 Expressive, toma los colores de tu fondo de pantalla (Material You) y tiene tema claro, oscuro o automático.
 
 ## Instalación
 
-Descarga el APK desde la sección de [Releases](../../releases) e instálalo en tu dispositivo Android.
+Descarga el APK de la última versión en [Releases](../../releases) e instálalo. Android puede pedirte permiso para instalar apps que no vienen de Play Store.
+
+Necesita Android 8.0 (API 26) o superior.
 
 ## Tecnologías
 
-- Kotlin
-- Jetpack Compose
-- Material 3 Expressive
-- Hilt (Inyección de dependencias)
-- Room (Base de datos local)
-- Jetpack DataStore
-- WorkManager
-- Google Credential Manager
-- Google Drive API
+- Kotlin y Jetpack Compose, con Material 3 Expressive
+- Hilt para la inyección de dependencias
+- Room y Jetpack DataStore para los datos locales
+- WorkManager para sincronizar en segundo plano
+- Credential Manager para iniciar sesión con Google
+- API de Google Drive
 - AndroidX Biometric
 
 ## Licencia
 
-Copyright © 2026 dony-aep. Todos los derechos reservados. Consulta el archivo [LICENSE](LICENSE) para más detalles.
+Copyright © 2026 dony-aep. Todos los derechos reservados. Los términos están en [LICENSE](LICENSE).
