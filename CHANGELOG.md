@@ -5,6 +5,12 @@ Todas las novedades importantes de este proyecto se documentan en este archivo.
 El formato se basa en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/),
 y este proyecto sigue el [Versionado Semántico](https://semver.org/lang/es/).
 
+## [2.0.1] - 2026-10-11
+
+### Corregido
+
+- El formato que aplicas desde la barra (negrita, cursiva, subrayado, encabezados, listas y «Borrar formato») ya se guarda aunque sea lo último que hagas antes de salir de la nota. Antes se perdía si no escribías nada después. Además, ahora se puede deshacer.
+
 ## [2.0.0] - 2026-10-10
 
 ### Añadido
